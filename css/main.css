@@ -979,6 +979,10 @@ nav ul.info > li:hover > .mega-menu {
 	.event .subscribe input[type="email"] {
 		margin-right: 0;
 	}
+        .event .info .time {
+	flex-wrap :wrap;
+       }
+
 }
 /* End Events */
 /* Start Pricing  */
