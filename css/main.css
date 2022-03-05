@@ -486,8 +486,8 @@ nav ul.info > li:hover > .mega-menu {
 .feature .card-gar .card .image::after {
 	content: "";
 	position: absolute;
-	left: 0;
-	top: 50%;
+	right: 0;
+	bottom: 0;
 	height: 0;
 	width: 0;
 	border-color: transparent transparent white transparent;
