@@ -108,6 +108,11 @@ ul {
 .text-component:hover::after {
 	right: 0;
 }
+.container > img[src="./image/dots.png"]:first-of-type {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 /* End component */
 /* Start Heade */
 nav {
