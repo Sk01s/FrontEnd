@@ -537,6 +537,7 @@ nav ul.info > li:hover > .mega-menu {
 	margin-bottom: 15px;
 	position: relative;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .feature .card-gar .card button::before {
 	content: "";

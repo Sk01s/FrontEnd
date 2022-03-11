@@ -25,18 +25,21 @@ setInterval(() => {
 //  Count Animtion
 let sections = document.querySelectorAll("[data-count]");
 let container = document.querySelector("[data-section]");
+let started = false;
 let staticsCounter = new IntersectionObserver(function (contain) {
 	if (contain[0].isIntersecting) {
-		console.log(contain[0]);
-		sections.forEach((el) => {
-			const maxNum = el.dataset.count;
-			const numInc = setInterval(() => {
-				el.textContent++;
-				if (el.textContent === maxNum) {
-					clearInterval(numInc);
-				}
-			}, maxNum / 2000);
-		});
+		if (!started) {
+			sections.forEach((el) => {
+				const maxNum = el.dataset.count;
+				const numInc = setInterval(() => {
+					el.textContent++;
+					if (el.textContent === maxNum) {
+						clearInterval(numInc);
+					}
+				}, maxNum / 2000);
+			});
+		}
+		started = true;
 	}
 }, {});
 
